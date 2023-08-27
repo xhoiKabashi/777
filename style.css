@@ -1,0 +1,61 @@
+:root {
+  --backGroundColor: #475569;
+  --tectColor: #f8fafc;
+  --cardColor: #020617;
+  --borderColor: #cbd5e1;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--borderColor);
+  /* background-color: var(--backGroundColor); */
+  height: 100vh;
+  flex-direction: column;
+  gap: 20px;
+  border: 10px solid var(--cardColor);
+}
+
+.container {
+  height: 300px;
+  width: 300px;
+  display: grid;
+  grid-template-columns: 80px 80px 80px;
+  grid-template-rows: 80px 80px 80px;
+  gap: 10px;
+  border: 2px solid var(--backGroundColor);
+  justify-content: center;
+  align-content: center;
+  background-color: #020617;
+}
+
+.container > .slotCard {
+  background-color: var(--cardColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--tectColor);
+  font-size: xx-large;
+}
+
+button {
+  background-color: var(--borderColor);
+
+  /* background-color: var(--backGroundColor); */
+  border-radius: 10px;
+  border: 2px solid var(--borderColor);
+}
+button > img {
+  height: 100px;
+  mix-blend-mode: multiply;
+}
+
+.slotCard > div > img {
+  height: 200px;
+}
